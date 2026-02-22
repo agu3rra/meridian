@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"400c8bbdb4e7788e","type":"group","x":-640,"y":-409,"width":1400,"height":889,"label":"Architecture - Meridian"},
+		{"id":"971e76ce0f8c7ac9","type":"text","text":"### Data Storage\n#PostgreSQL\n`localhost:9020`","x":-260,"y":240,"width":340,"height":134},
+		{"id":"f9715f5f492ff36c","type":"text","text":"### Data sources","x":-620,"y":14,"width":250,"height":60,"color":"1"},
+		{"id":"92918359f26aea81","type":"text","text":"Apple Health export (XML)","x":-620,"y":74,"width":250,"height":60},
+		{"id":"366313e419dbb176","type":"text","text":"Steam","x":-620,"y":254,"width":250,"height":60},
+		{"id":"c115e0974e9b8d2c","type":"text","text":"Epic Games","x":-620,"y":314,"width":250,"height":60},
+		{"id":"bb7f490a20cd421e","type":"text","text":"### User\n![[agu3rra.jpg|150]]","x":560,"y":-382,"width":180,"height":230},
+		{"id":"dc7cae853f8c971c","type":"text","text":"### Data Collection API\n#golang app with integration to data providers\n- /catalog\n- /jobs\n- /import\n\n`https://localhost:9010/api/`","x":-260,"y":-87,"width":340,"height":262},
+		{"id":"87d1e8ea91289985","type":"text","text":"### User interface\n#OpenUI5 app\nIncludes dashboards and all\n`https://localhost:9001`","x":220,"y":-33,"width":250,"height":155},
+		{"id":"390b346d41b7bbb4","type":"text","text":"### Identity Provider\n\n#Github SSO\n- Oauth2 app","x":-215,"y":-341,"width":250,"height":149},
+		{"id":"d46359422adaa832","type":"text","text":"Trackt TV","x":-620,"y":134,"width":250,"height":60},
+		{"id":"830ba4f975d3aa51","type":"text","text":"Medical exams (from PDF via AI)","x":-620,"y":194,"width":250,"height":60},
+		{"id":"cc66fef7c67c8db8","type":"text","text":"Kindle","x":-620,"y":374,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"d8f67d726d87a137","fromNode":"dc7cae853f8c971c","fromSide":"bottom","toNode":"971e76ce0f8c7ac9","toSide":"top"},
+		{"id":"2a2eef430ca05373","fromNode":"dc7cae853f8c971c","fromSide":"right","toNode":"87d1e8ea91289985","toSide":"left"},
+		{"id":"544ce781870908b6","fromNode":"dc7cae853f8c971c","fromSide":"top","toNode":"390b346d41b7bbb4","toSide":"bottom"},
+		{"id":"83da269db936827d","fromNode":"bb7f490a20cd421e","fromSide":"left","toNode":"390b346d41b7bbb4","toSide":"right"},
+		{"id":"8d84d80a7a79bcff","fromNode":"f9715f5f492ff36c","fromSide":"right","toNode":"dc7cae853f8c971c","toSide":"left"},
+		{"id":"e83321acb6f2c888","fromNode":"bb7f490a20cd421e","fromSide":"bottom","toNode":"87d1e8ea91289985","toSide":"right"}
+	]
+}
